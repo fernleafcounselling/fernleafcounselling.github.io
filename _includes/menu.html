@@ -1,0 +1,48 @@
+<nav class="py-6 flex items-center justify-between">
+  <!-- Logo -->
+  <a href="/" class="block ml-2" style="width: 150px; min-width: 150px;">
+    <img src="/images/logo-small.png" />
+  </a>
+
+  <!-- Hamburger (mobile only) -->
+  <div class="lg:hidden flex">
+    <a class="p-3 mr-4 rounded hover:opacity-80 block whitespace-nowrap text-white" href="https://fernleafcounselling.janeapp.com/" style="background-color: #A8B545">Book a session</a>
+    <button id="menu-btn" class="text-white p-3">
+      <!-- simple 3-line icon -->
+      <div class="w-6 h-0.5 bg-white mb-1"></div>
+      <div class="w-6 h-0.5 bg-white mb-1"></div>
+      <div class="w-6 h-0.5 bg-white"></div>
+    </button>
+  </div>
+
+  <!-- Desktop Menu -->
+  <ul class="hidden lg:flex mx-4 my-4 gap-5 text-white justify-center w-full">
+    <li><a class="p-4 rounded hover:opacity-80 whitespace-nowrap" href="https://fernleafcounselling.janeapp.com/" style="background-color: #A8B545">Book a session</a></li>
+    <li><a href="/about.html" class="p-4 rounded whitespace-nowrap hover:bg-[#327584]">About</a></li>
+    <li><a href="/services.html" class="p-4 rounded whitespace-nowrap hover:bg-[#327584]">Services</a></li>
+    <li><a href="/specialties.html" class="p-4 rounded whitespace-nowrap hover:bg-[#327584]">Specialties</a></li>
+    <li><a href="/for-parents.html" class="p-4 rounded whitespace-nowrap hover:bg-[#327584]">Parents &amp; guardians</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile Menu (hidden by default) -->
+<div id="mobile-menu" class="hidden">
+  <ul class="flex flex-col gap-3">
+    <div class="bg-[#327584] text-white p-4">
+      <li><a href="/about.html" class="p-3 rounded block hover:bg-[#2a616c]">About</a></li>
+      <li><a href="/services.html" class="p-3 rounded block hover:bg-[#2a616c]">Services</a></li>
+      <li><a href="/specialties.html" class="p-3 rounded block hover:bg-[#2a616c]">Specialties</a></li>
+      <li><a href="/for-parents.html" class="p-3 rounded block hover:bg-[#2a616c]">Parents &amp; guardians</a></li>
+    </div>
+  </ul>
+</div>
+
+<!-- Small JS to toggle menu -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>

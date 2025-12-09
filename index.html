@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,172 +20,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'CloudyNight';
+        src: url('/images/CloudyNight.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
 
 </head>
   <body style="background-color: #024554; font-family: 'Montserrat', sans-serif;">
 
     <!-- Main column container-->
-    <div class="w-full md:w-2/3 mx-0 md:mx-auto">
+    <div class="mx-auto max-w-7xl">
+
+      <!-- Menu -->
+      {% include menu.html %}
 
       <!-- Intro section -->
       <div class="bg-white p-5 md:p-10">
-        <div class="flex flex-col lg:flex-row justify-center gap-10">
-
-          <div class="w-full lg:w-1/3">
-            <img class="mx-auto"  style="width: 300px" src="images/Fern%20leaf%20counselling.png" alt="Fern Leaf Counselling logo" />
-          </div>
-
-          <div class="mb-5 text-center w-full lg:w-2/3">
-            <h1 class="text-4xl md:text-6xl font-bold mb-5 md:mt-10" style="color: #3A5C39; font-family: 'Ysabeau Office', sans-serif;">Fern Leaf Counselling</h1>
-            <p class="text-2xl md:text-4xl" style="font-family: 'Dancing Script', cursive;">Therapy that meets you where you're at</p>
-
-            <div class="mt-6 md:mt-16 flex justify-center flex-col md:flex-row gap-2">
-              <a class="border-2 border-slate-800 p-3 rounded text-white hover:opacity-80" style="background-color: #024554" href="https://calendly.com/anelson-counselling/15min">Book a free 15-min consultation</a>
-              <a class="border-2 border-slate-800 p-3 rounded text-white hover:opacity-80" style="background-color: #024554" href="https://calendly.com/anelson-counselling">Existing clients book here</a>
-            </div>
-
-          </div>
-        </div>
-
+        <img class="mx-auto" src="/images/logo-large.png" width="540" />
+        <p class="text-center font-bold text-3xl mt-20" style="color: #53736a">
+          Online and in-person counselling in Burnaby
+        </p>
       </div>
 
-      <!-- Services -->
-      <div class="p-5 md:p-10 text-white" style="background-color: #6A8C69">
-        <h2 class="text-3xl md:text-5xl mb-5 text-center" style="font-family: 'Ysabeau Office', sans-serif;">Services</h1>
-        <p class="text-md md:text-lg text-center mb-5">
-          I offer individual counselling for children (aged 10 and older), adolescents, and adults. In-person sessions are available in East Vancouver in a private office
-          near Hastings and Commercial or in New Westminster in the Sapperton area. Virtual sessions are via Zoom.
-        </p>
-        <p class="text-center text-md md:text-lg mb-5">
-          I am currently full and not taking on new clients. I am maintaining a waitlist and will have the ability to take new clients starting in January 2026.
-        </p>
-        
-        <p class="text-center text-md md:text-lg">
-          My current rate is $100 per 50 min session.  
-        </p>
-        
-        <div class="flex flex-col md:flex-row justify-center gap-2 md:gap-10 mt-5">
-
-          <!-- Left column -->
-          <div class="w-full md:w-1/2 p-4 md:p-8">
-            <h3 class="text-xl mb-5 text-center">Individual Counselling for Children and Teens</h3>
-            <p>
-              Young people deserve support that honours who they are. I offer a down-to-earth,
-              affirming space where kids and teens can explore their thoughts and feelings, develop
-              coping tools, and build confidence, without pressure to be anyone but themselves.
-            </p>
-          </div>
-
-          <!-- Right column -->
-          <div class="w-full md:w-1/2 p-4 md:p-8">
-            <h3 class="text-xl mb-5 text-center">Individual Counselling for Adults</h3>
-            <p>
-              Whether you're feeling stuck, overwhelmed, or just ready for something to shift, counselling
-              can offer space to slow down and explore what's going on. I'll support you in sorting through the noise,
-              tuning into what matters, and finding ways forward that feel right for you.
-            </p>
-          </div>
-
-        </div>
-      </div>
 
       <!-- About me-->
 
-      <div class="p-5 md:p-10 bg-white">
-        <h2 class="text-3xl md:text-5xl mb-5 text-center" style="font-family: 'Ysabeau Office', sans-serif;">About Me</h2>
-        <img class="md:float-right md:ml-5 mb-5" src="images/AllisonNelsonHeadshot1.jpeg" style="width: 200px;" />
+      <div class="p-5 md:p-10 bg-white text-xl">
+        <img class="md:float-right md:ml-5 mb-5 rounded-xl" src="images/AllisonNelsonHeadshot1.jpeg" style="width: 200px;" />
         <p class="mb-5">
-          Hi, I'm Allison. I'm a practicum counsellor with a background in behaviour support, training in Acceptance and Commitment Therapy (ACT), and a
-          deep respect for the messy, imperfect nature of being human.
+          Hi, I'm Allison. I'm a counsellor who works with people who feel overwhelmed, stuck, or out of alignment with the life they want. I take a warm, flexible, and non-pathologizing approach—grounded in Acceptance and Commitment Therapy and shaped by years of supporting folks whose lives don't fit neatly into boxes.
         </p>
         <p class="mb-5">
-          Before shifting into counselling, I spent over a decade supporting neurodivergent kids,
-          teens, and their families. That work gave me a deep appreciation for how systems shape us, and
-          how we can push back. It also taught me to stay flexible, meet people where they're at, and
-          focus on what actually helps.
+          I'm queer, neurodivergent, and committed to showing up as a real human in the room. Humor, curiosity, and gentle challenge matter to me, and I bring these into our work as we explore what actually helps you move toward a life that feels more authentic and doable.
         </p>
         <p class="mb-5">
-          I'm queer, neurodivergent, and committed to showing up in therapy as a real person.
-          Humor, curiosity, and openness matter to me, and I bring these qualities into my work.
-          I aim to be warm, authentic, and gently challenging when needed. I don't believe there is one right path through life, but
-          I'll walk alongside you while we figure out which direction feels worth exploring.
+          If you're looking for therapy that meets you where you are and respects your lived experience, you're in the right place. Together, we'll explore what matters to you, build skills, and work towards building a life that feels like <i>yours</i>.
         </p>
       </div>
 
       <!-- Quote -->
 
       <div style="background-color: #A8B545" class="p-8 md:p-20">
-        <p class="text-black text-3xl md:text-6xl text-center" style="font-family: 'Dancing Script', cursive;">
+        <p class="text-black text-3xl md:text-7xl text-center" style="font-family: 'CloudyNight', cursive;">
           Be present, open up, do what matters
-        </p>
-      </div>
-
-      <!-- My Approach -->
-
-      <div class="p-5 md:p-10" style="background-color: #fff">
-        <h2 class="text-3xl md:text-5xl mb-5 text-center" style="font-family: 'Ysabeau Office', sans-serif;">My Approach</h2>
-        <p class="mb-5">
-          My approach is grounded in Acceptance and Commitment Therapy (ACT), which emphasizes flexibility, values-based living, and
-          making room for the full range of human experience.
-        </p>
-        <p class="mb-5">
-          In our sessions, you can expect a relational, collaborative space where we make room for both the hard
-          stuff and the possibility of change. I won't pathologize you. I won't push strategies that don't feel right.
-          Instead, we'll stay curious, follow what works, and build something that feels doable and true to who you are.
-        </p>
-      </div>
-
-      <!-- Areas of Focus -->
-
-      <div class="p-5 md:p-10 text-white" style="background-color: #6A8C69">
-        <h2 class="text-3xl md:text-5xl mb-5 text-center" style="font-family: 'Ysabeau Office', sans-serif;">Areas of Focus</h2>
-        <p class="mb-5">
-          I bring a neuro-affirming and queer-affirming lens to therapy and especially enjoy working with clients
-          who are neurodivergent (Autistic, ADHD) or living with anxiety. Many of the folks I support are feeling
-          stuck, overwhelmed, or exhausted by trying to "fix" themselves and are ready to explore what it
-          might look like to live more fully and on their own terms. Together, we might build practical tools, unpack
-          internalized expectations, or get clearer on what matters to you, so that you can move toward a life that
-          actually feels like <i>yours</i>.
-        </p>
-      </div>
-
-      <!-- Credentials -->
-
-      <div class="p-5 md:p-10 bg-white">
-        <h2 class="text-3xl md:text-5xl mb-5 text-center" style="font-family: 'Ysabeau Office', sans-serif;">Educational Background</h2>
-        <p class="mb-5">
-          I am completing a clinical practicum under the supervision of <a class="underline text-blue-800" href="https://www.psychologytoday.com/ca/therapists/kathryn-theroux-vancouver-bc/1413474">Kathryn Theroux, MA, RCC-ACS</a>, which is the last portion of my Master of Counselling Psychology degree from Yorkville University. After I graduate at the end of 2025 I will seek registration with the British Columbia Association of Clinical Counsellors.
-        </p>
-        <p class="mb-5">
-          I am a Board Certified Behaviour Analyst with a Master of Science degree from St. Cloud State University, and I have an undergraduate degree in Psychology from the University of Manitoba.
         </p>
       </div>
 
       <!-- Get Started -->
 
-      <div class="p-5 md:p-10" style="background-color: #A8B545">
+      <div class="p-5 md:p-10 bg-white text-xl">
           <p class="mb-8">
             <b>Ready to get started?</b> This short video call gives you a chance to ask questions, share a bit about
             what's bringing you to therapy, and get a feel for how I work. There's no obligation &mdash; we'll just
             see if it feels right to move forward.
           </p>
           <p class="text-center">
-            <a class="border-2 border-slate-800 p-3 rounded mr-5 text-white hover:opacity-80" style="background-color: #3A5C39" href="https://calendly.com/anelson-counselling/15min">Book a free 15-min consultation</a>
+            <a class="border-2 border-slate-800 p-3 rounded mr-5 text-white hover:opacity-80" style="background-color: #3A5C39" href="https://fernleafcounselling.janeapp.com/">Book a free 15-min consultation</a>
           </p>
       </div>
 
       <!-- Footer -->
 
-      <section class="p-5 text-white flex flex-col md:flex-row gap-5">
-        <div class="w-full md:w-1/2">
-          <a class="underline" href="mailto:anelson.counselling@gmail.com">anelson.counselling@gmail.com</a><br /><br />
-          &copy; Allison Nelson Counselling, 2025
-        </div>
-
-        <div class="w-full md:w-1/2 md:text-right" style="font-family: Arial, Helvetica, sans-serif">
-          I live on the unceded and ancestral territories of the Tsleil-Waututh (səl̓ilw̓ətaʔɬ), Kwikwetlem (kʷikʷəƛ̓əm), Squamish (Sḵwx̱wú7mesh Úxwumixw), and Musqueam (xʷməθkʷəy̓əm) Coast Salish peoples.
-        </div>
-      </section>
+      {% include footer.html %}
 
     </div>
 
